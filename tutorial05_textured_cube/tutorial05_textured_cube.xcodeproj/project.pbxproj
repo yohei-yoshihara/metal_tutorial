@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4763407022683CA2003FEC3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4763406F22683CA2003FEC3D /* AppDelegate.swift */; };
+		4763407222683CA2003FEC3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4763407122683CA2003FEC3D /* ViewController.swift */; };
+		4763407422683CB1003FEC3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4763407322683CB1003FEC3D /* Assets.xcassets */; };
+		4763407722683CB1003FEC3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4763407522683CB1003FEC3D /* Main.storyboard */; };
+		4763408222683D0D003FEC3D /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4763407F22683D0D003FEC3D /* Renderer.swift */; };
+		4763408322683D0D003FEC3D /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 4763408022683D0D003FEC3D /* Shader.metal */; };
+		4763408422683D0D003FEC3D /* MathUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4763408122683D0D003FEC3D /* MathUtil.swift */; };
+		4763408622683D4B003FEC3D /* uvtemplate.png in Resources */ = {isa = PBXBuildFile; fileRef = 4763408522683D4B003FEC3D /* uvtemplate.png */; };
+		4763408A22683D94003FEC3D /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4763408822683D94003FEC3D /* Metal.framework */; };
+		4763408B22683D94003FEC3D /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4763408922683D94003FEC3D /* MetalKit.framework */; };
+		4763408D22683D99003FEC3D /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4763408C22683D99003FEC3D /* SceneKit.framework */; };
+		4763408F22683D9E003FEC3D /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4763408E22683D9E003FEC3D /* GLKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		474909FB226EF4A000A345A1 /* ShaderTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		474909FC226EF4A000A345A1 /* Bridge-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
+		4763406C22683CA2003FEC3D /* tutorial05_textured_cube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tutorial05_textured_cube.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4763406F22683CA2003FEC3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4763407122683CA2003FEC3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4763407322683CB1003FEC3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4763407622683CB1003FEC3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4763407822683CB1003FEC3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4763407922683CB1003FEC3D /* tutorial05_textured_cube.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = tutorial05_textured_cube.entitlements; sourceTree = "<group>"; };
+		4763407F22683D0D003FEC3D /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		4763408022683D0D003FEC3D /* Shader.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; };
+		4763408122683D0D003FEC3D /* MathUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathUtil.swift; sourceTree = "<group>"; };
+		4763408522683D4B003FEC3D /* uvtemplate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uvtemplate.png; sourceTree = "<group>"; };
+		4763408822683D94003FEC3D /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		4763408922683D94003FEC3D /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		4763408C22683D99003FEC3D /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		4763408E22683D9E003FEC3D /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4763406922683CA2003FEC3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4763408F22683D9E003FEC3D /* GLKit.framework in Frameworks */,
+				4763408D22683D99003FEC3D /* SceneKit.framework in Frameworks */,
+				4763408A22683D94003FEC3D /* Metal.framework in Frameworks */,
+				4763408B22683D94003FEC3D /* MetalKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4763406322683CA2003FEC3D = {
+			isa = PBXGroup;
+			children = (
+				4763406E22683CA2003FEC3D /* tutorial05_textured_cube */,
+				4763406D22683CA2003FEC3D /* Products */,
+				4763408722683D94003FEC3D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4763406D22683CA2003FEC3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4763406C22683CA2003FEC3D /* tutorial05_textured_cube.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4763406E22683CA2003FEC3D /* tutorial05_textured_cube */ = {
+			isa = PBXGroup;
+			children = (
+				4763406F22683CA2003FEC3D /* AppDelegate.swift */,
+				4763407122683CA2003FEC3D /* ViewController.swift */,
+				4763407F22683D0D003FEC3D /* Renderer.swift */,
+				4763408022683D0D003FEC3D /* Shader.metal */,
+				4763408122683D0D003FEC3D /* MathUtil.swift */,
+				474909FB226EF4A000A345A1 /* ShaderTypes.h */,
+				474909FC226EF4A000A345A1 /* Bridge-Header.h */,
+				4763408522683D4B003FEC3D /* uvtemplate.png */,
+				4763407322683CB1003FEC3D /* Assets.xcassets */,
+				4763407522683CB1003FEC3D /* Main.storyboard */,
+				4763407822683CB1003FEC3D /* Info.plist */,
+				4763407922683CB1003FEC3D /* tutorial05_textured_cube.entitlements */,
+			);
+			path = tutorial05_textured_cube;
+			sourceTree = "<group>";
+		};
+		4763408722683D94003FEC3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4763408E22683D9E003FEC3D /* GLKit.framework */,
+				4763408C22683D99003FEC3D /* SceneKit.framework */,
+				4763408822683D94003FEC3D /* Metal.framework */,
+				4763408922683D94003FEC3D /* MetalKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4763406B22683CA2003FEC3D /* tutorial05_textured_cube */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4763407C22683CB1003FEC3D /* Build configuration list for PBXNativeTarget "tutorial05_textured_cube" */;
+			buildPhases = (
+				4763406822683CA2003FEC3D /* Sources */,
+				4763406922683CA2003FEC3D /* Frameworks */,
+				4763406A22683CA2003FEC3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tutorial05_textured_cube;
+			productName = tutorial05_textured_cube;
+			productReference = 4763406C22683CA2003FEC3D /* tutorial05_textured_cube.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4763406422683CA2003FEC3D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Yohei Yoshihara";
+				TargetAttributes = {
+					4763406B22683CA2003FEC3D = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 4763406722683CA2003FEC3D /* Build configuration list for PBXProject "tutorial05_textured_cube" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4763406322683CA2003FEC3D;
+			productRefGroup = 4763406D22683CA2003FEC3D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4763406B22683CA2003FEC3D /* tutorial05_textured_cube */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4763406A22683CA2003FEC3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4763407422683CB1003FEC3D /* Assets.xcassets in Resources */,
+				4763408622683D4B003FEC3D /* uvtemplate.png in Resources */,
+				4763407722683CB1003FEC3D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4763406822683CA2003FEC3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4763408422683D0D003FEC3D /* MathUtil.swift in Sources */,
+				4763408322683D0D003FEC3D /* Shader.metal in Sources */,
+				4763407222683CA2003FEC3D /* ViewController.swift in Sources */,
+				4763408222683D0D003FEC3D /* Renderer.swift in Sources */,
+				4763407022683CA2003FEC3D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4763407522683CB1003FEC3D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4763407622683CB1003FEC3D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4763407A22683CB1003FEC3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4763407B22683CB1003FEC3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4763407D22683CB1003FEC3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = tutorial05_textured_cube/tutorial05_textured_cube.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = tutorial05_textured_cube/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.x0.yy2.tutorial05-textured-cube";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "tutorial05_textured_cube/Bridge-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4763407E22683CB1003FEC3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = tutorial05_textured_cube/tutorial05_textured_cube.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = tutorial05_textured_cube/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.x0.yy2.tutorial05-textured-cube";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "tutorial05_textured_cube/Bridge-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4763406722683CA2003FEC3D /* Build configuration list for PBXProject "tutorial05_textured_cube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4763407A22683CB1003FEC3D /* Debug */,
+				4763407B22683CB1003FEC3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4763407C22683CB1003FEC3D /* Build configuration list for PBXNativeTarget "tutorial05_textured_cube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4763407D22683CB1003FEC3D /* Debug */,
+				4763407E22683CB1003FEC3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4763406422683CA2003FEC3D /* Project object */;
+}
